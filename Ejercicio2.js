@@ -8,13 +8,24 @@ Tenga en cuenta que el formato de todos los datos es el siguiente:
 • ARQ2556: Nodin Chavdri
 • ARQ2557: Finn*/
 
+//Funcion tradicional 
+/*function buscarPiloto(cadenaTexto){
+    return(cadenaTexto.split(":")[1])
+ }*/
+
 //Función para separar una cadena de texto 
 //Funcional, muestra todo el array
-let separarCadena=(cadenaTexto)=>(cadenaTexto.split(":")) 
+let buscarPiloto=(cadenaTexto)=>(cadenaTexto.split(":")) 
 //Llamado a la función 
-console.log(separarCadena("ABC1234:Helena Yanes:456"))
+console.log(buscarPiloto("ABC1234:Helena Yanes:456"))
 
 // //Funcional 
 // let separarCadena=(cadenaTexto)=>(cadenaTexto.split(":")[1]) 
 // //Llamado a la función 
 // console.log(separarCadena("ABC1234:Helena Yanes:456"))
+
+
+
+
+
+
