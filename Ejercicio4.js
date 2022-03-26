@@ -43,10 +43,6 @@ let colores=['Turquesa', 'Borgoña', 'Rojo', 'amarillo']
 let energias=['55', '12', '8', '22']
 let portadores=['Obi Wan', 'Obi Wan', 'Obi Wan', 'Obi Wan']
 
-let numero=Math.floor(Math.random()*colores.length)
-let numero2=Math.floor(Math.random()*energias.length)
-let numero3=Math.floor(Math.random()*portadores.length)
-
 let cables=[]
 
 for(let i=0; i<20; i++){
