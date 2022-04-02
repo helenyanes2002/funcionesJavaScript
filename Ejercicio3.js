@@ -12,8 +12,14 @@ temperatura = calcularTemperaturaMedia(8.5,9.0)
 console.log(`La temperatura media es: ${temperatura}`)*/
 
 //Función Flecha
-let calcularTemperaturaMedia = (temperaturaMaxima, temperaturaMinima)=>temperaturaMedia = (temperaturaMaxima + temperaturaMinima)/2
- 
+temperaturas=[8.5,9.0]
+let sumaTemperatura = 0
+let temperaturaMedia = 0 
 
-calcularTemperaturaMedia(8.9,5.5)
-console.log("La temperatura media es: " + temperaturaMedia)
+let calcularTemperaturaMedia = (temperaturas)=>{
+    sumaTemperatura = temperaturas.reduce(function(acumulador, siguienteValor){
+         return (acumulador + siguienteValor)
+    }); 
+    return sumaTemperatura / temperaturas.length  
+}
+console.log("La temperatura media es: " + calcularTemperaturaMedia(temperaturas))

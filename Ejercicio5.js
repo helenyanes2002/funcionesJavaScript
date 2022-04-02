@@ -11,22 +11,14 @@ let comisionConDescuento = comision - (5*comision/100)
 
 //Funcion tradicional 
 /*function CalcularSalarioMensual(cantidadNavesVendidas){
-    
     let sumaDeComision = cantidadNavesVendidas * comisionConDescuento
-    let salarioTotal = sumaDeComision + salarioMensual
-
-    return salarioTotal
-    
+    return(sumaDeComision + salarioMensual)
 }
 console.log(`El salario mensual del vendedor es: ${CalcularSalarioMensual(4)}`)*/
 
 //Funcion de flecha  
 let resultadoSalario = (cantidadNavesVendidas) => {
-    
     let sumaDeComision = cantidadNavesVendidas * comisionConDescuento
-    let salarioTotal = sumaDeComision + salarioMensual
-
-    return salarioTotal
-    
+    return (sumaDeComision + salarioMensual) 
 }
 console.log(`El salario mensual del vendedor es: ${resultadoSalario(4)}`)
